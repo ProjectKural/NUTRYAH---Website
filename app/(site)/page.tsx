@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
   // other metadata
   description: "Personalized diet plans and expert nutrition advice for a healthier you. Book a consultation with top dietitians online.",
-  icons: "/images/logo/logo-Nutryah.png",
+  icons: "/images/favicon.ico",
 };
 
 export default function Home() {
