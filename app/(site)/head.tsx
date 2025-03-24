@@ -1,27 +1,28 @@
-export default function Head() {
+import Head from "next/head";
+
+export default function HomePage() {
   return (
     <>
-       {/* Title & Meta Information */}
-       <title>Nutryah | Online Dietitian Consultation</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="AI-powered dietitian consultation and health solutions." />
-      <meta name="keywords" content="nutrition, dietitian, health, wellness, AI diet plan" />
-
-      {/* Open Graph (Facebook, LinkedIn, etc.) */}
-      <meta property="og:title" content="Nutryah | Online Dietitian Consultation" />
-      <meta property="og:description" content="Book AI-powered dietitian consultations and personalized health plans with Nutryah." />
-      <meta property="og:image" content="https://www.nutryah.com/images/meta-image.jpg" />
-      <meta property="og:url" content="https://www.nutryah.com" />
-
-      {/* Twitter Card (for Twitter previews) */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Nutryah | AI Dietitian Consultation" />
-      <meta name="twitter:description" content="Book AI-powered dietitian consultations with Nutryah." />
-      <meta name="twitter:image" content="https://www.nutryah.com/images/meta-image.jpg" />
-
-      {/* Favicon Fix */}
-      <link rel="icon" href="/images/favicon.ico" />
-  
+      <Head>
+        <title>NUTRYAH - AI-Driven Health & Wellness</title>
+        <meta name="google-site-verification" content="014ed0fbbc3f108f" />
+        <meta
+          name="description"
+          content="NUTRYAH Digital Health: AI-driven dietitian services, wellness solutions, and personalized health insights."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="NUTRYAH Digital Health" />
+        <meta
+          property="og:description"
+          content="AI-powered nutrition and wellness solutions."
+        />
+        <meta property="og:url" content="https://www.nutryah.com/" />
+        <meta property="og:type" content="website" />
+        <link rel="icon" href="/images/favicon.ico" />
+      </Head>
+      <main>
+        <h1>Welcome to NUTRYAH</h1>
+      </main>
     </>
   );
 }
