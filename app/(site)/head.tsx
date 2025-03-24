@@ -5,7 +5,7 @@ export default function HomePage() {
     <>
       <Head>
         <title>NUTRYAH - AI-Driven Health & Wellness</title>
-        <meta name="google-site-verification" content="014ed0fbbc3f108f" />
+        <meta name="google-site-verification" content="Twv4Z6yuQBTNcFcvJxKjf8iDm9dnksCFyzK0O1D6I_w" />
         <meta
           name="description"
           content="NUTRYAH Digital Health: AI-driven dietitian services, wellness solutions, and personalized health insights."
