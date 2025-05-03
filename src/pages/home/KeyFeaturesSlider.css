@@ -1,0 +1,24 @@
+.scroll-wrapper {
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .scroll-track {
+    display: flex;
+    width: fit-content;
+    animation: scrollLeft 30s linear infinite;
+  }
+  
+  .feature-card {
+    flex: 0 0 auto;
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

@@ -1,0 +1,87 @@
+/*     
+  .home-contain {
+    height: 100%;
+    
+  } */
+/* Add this to your Tailwind CSS (if not already) */
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+  .scrollbar-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+.hero-one{
+  background-image: url("../../assets/home/herosec.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: brightness(60%);
+}
+/* HeroCarousel.css */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
+
+}
+
+/* src/styles/AboutNUTRYAH.css or in global styles */
+.clip-right-wave {
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+  object-fit: cover;
+}
+
+
+
+.finalcta{
+  background-color: rgb(21, 21, 21);
+  clip-path: polygon(0% 0, 70% 3%, 70% 13%, 97% 9%, 97.5% 89%, 40% 100%, 39.9% 90%, 1% 88%);
+}
+
+.clip-path-diagonal-up {
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Add to your global CSS or Home.css */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

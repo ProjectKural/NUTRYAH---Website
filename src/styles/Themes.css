@@ -1,0 +1,70 @@
+/* Hide scrollbars for all browsers */
+
+html,
+body {
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+}
+:root {
+  --bg-text: #070F2B;
+  /* ---------------light shades------------------------ */
+
+  --bg-secondary: #8696FE;
+  --bg-text-secondary: #F5F5F5;
+  --bg-text-cold: #EEF5FF;
+  --bg-sub-cold: #E5D283;
+
+  /* ------------------Dark shades---------------------------- */
+
+  --text-light-bg: #E9EFEC;
+  --text-dark: #153462;
+  --text-sub-dark: #213555;
+  --text-sub-text: #FFF2F2;
+
+  /* ----------------------------meadium shades--------------------------------------- */
+
+  --md-bg:#EEF5FF;
+
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  /* Use hyphen if that's the correct file name */
+
+}
+
+@font-face {
+  font-family: 'Medium';
+  src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  /* Use hyphen if that's the correct file name */
+
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  /* Use hyphen if that's the correct file name */
+
+}
+
+@font-face {
+  font-family: 'SemiBold';
+  src: url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+  /* Use hyphen if that's the correct file name */
+
+}
+
+body {
+  font-family: 'Medium', sans-serif;
+
+}
+/* h2, h3, h1, h4{
+  letter-spacing: 0.05rem;
+}
+p{
+  letter-spacing: 0.05rem;
+}
+li{
+  letter-spacing: 0.05rem;
+} */
