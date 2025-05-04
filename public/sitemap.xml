@@ -1,70 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Created for Nutryah | Digital Healthcare Software Solutions -->
 
-<url>
-  <loc>https://nutryah.com/</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/about</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/services</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
+  <url>
+    <loc>https://nutryah.com/</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://nutryah.com/solutions</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/careers</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/contact</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/academy</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/blog</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/case-studies</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/faq</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/audit</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/legal</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
+  <url>
+    <loc>https://nutryah.com/about</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-<url>
-  <loc>https://nutryah.com/service/request</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
-<url>
-  <loc>https://nutryah.com/service/audit</loc>
-  <lastmod>2025-05-04</lastmod>
-</url>
+  <url>
+    <loc>https://nutryah.com/services</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
+  <url>
+    <loc>https://nutryah.com/solutions</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/careers</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/contact</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/academy</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/blog</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/case-studies</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/faq</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/audit</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/legal</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/service/request</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://nutryah.com/service/audit</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
 </urlset>
