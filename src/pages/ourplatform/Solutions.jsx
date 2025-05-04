@@ -115,6 +115,7 @@ const SolutionsPage = () => {
           name="description"
           content="Discover Nutryah’s healthcare software solutions tailored for every sector – hospitals, clinics, pharmacies, nursing homes, diagnostic and AYUSH centers, as well as dental and eye hospitals."
         />
+        <link rel="canonical" href="https://nutryah.com/solutions" />
       </Helmet>
 
       {/* HERO - Full Screen */}
@@ -236,52 +237,52 @@ const SolutionsPage = () => {
 
       {/* CTA */}
       <section className="w-full bg-[var(--md-bg)] py-16 px-6 md:px-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center relative">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center relative">
 
-        {/* Right side: image with fade-in */}
-        <div
-          className="relative h-[300px] md:h-[450px] w-full overflow-hidden "
-          data-aos="fade-left"
-        >
-          <img
-            src={CtaBg}
-            alt="CTA Background"
-            className="w-full h-full object-cover"
-          />
-        </div>
+          {/* Right side: image with fade-in */}
+          <div
+            className="relative h-[300px] md:h-[450px] w-full overflow-hidden "
+            data-aos="fade-left"
+          >
+            <img
+              src={CtaBg}
+              alt="CTA Background"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-        {/* Left: text content with background card */}
-        <div
-          className="bg-white shadow-2xl rounded-2xl p-8 z-10 md:-ml-20 relative md:w-[90%]"
-          data-aos="fade-right"
-        >
-          <h3 className="text-[var(--bg-special)] text-sm font-semibold uppercase tracking-widest mb-2">
-            - NUTRYAH
-          </h3>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Ready to Transform Your Facility?
-          </h2>
-          <p className="text-gray-700 mb-6 text-base md:text-lg">
-            Let’s create a future-ready digital ecosystem for your healthcare organization with Nutryah’s modular, intelligent software built for NABH-aligned growth.
-          </p>
+          {/* Left: text content with background card */}
+          <div
+            className="bg-white shadow-2xl rounded-2xl p-8 z-10 md:-ml-20 relative md:w-[90%]"
+            data-aos="fade-right"
+          >
+            <h3 className="text-[var(--bg-special)] text-sm font-semibold uppercase tracking-widest mb-2">
+              - NUTRYAH
+            </h3>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Ready to Transform Your Facility?
+            </h2>
+            <p className="text-gray-700 mb-6 text-base md:text-lg">
+              Let’s create a future-ready digital ecosystem for your healthcare organization with Nutryah’s modular, intelligent software built for NABH-aligned growth.
+            </p>
 
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="/contact"
-              className="bg-[var(--bg-text)] hover:bg-[#1e3c5c] text-white px-6 py-3 rounded-full font-medium transition duration-300"
-            >
-               Get a Custom Demo
-            </a>
-            <a
-              href="/downloads/solutions-overview.pdf"
-              className="border border-[var(--bg-text)] text-[var(--bg-text)] px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition duration-300"
-            >
-               Download Overview
-            </a>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="/contact"
+                className="bg-[var(--bg-text)] hover:bg-[#1e3c5c] text-white px-6 py-3 rounded-full font-medium transition duration-300"
+              >
+                Get a Custom Demo
+              </a>
+              <a
+                href="/downloads/solutions-overview.pdf"
+                className="border border-[var(--bg-text)] text-[var(--bg-text)] px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition duration-300"
+              >
+                Download Overview
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   );
 };

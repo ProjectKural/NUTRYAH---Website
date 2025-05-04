@@ -99,6 +99,7 @@ const AuditPage = () => {
           name="description"
           content="Is your hospital ready for NABH accreditation, ABDM compliance, and digital transformation? Get a free Digital Readiness Audit from Nutryah and discover actionable steps to future-proof your healthcare facility."
         />
+        <link rel="canonical" href="https://nutryah.com/audit" />
       </Helmet>
 
       {/* Banner */}

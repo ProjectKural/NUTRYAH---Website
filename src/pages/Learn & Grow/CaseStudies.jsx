@@ -107,6 +107,7 @@ const CaseStudiesPage = () => {
           name="description"
           content="Discover how Nutryah’s healthcare software solutions have delivered measurable results across hospitals, clinics, pharmacies, labs, and AYUSH centers."
         />
+         <link rel="canonical" href="https://nutryah.com/case-studies" />
       </Helmet>
 
       {/* Hero Section */}

@@ -30,6 +30,7 @@ const AcademyPage = () => {
           name="description"
           content="Free resources, templates, webinars, and mini-courses from Nutryah Academy. Learn how to digitize your clinic, prepare for NABH accreditation, and master healthcare IT best practices."
         />
+        <link rel="canonical" href="https://nutryah.com/academy" />
       </Helmet>
 
       {/* Banner */}

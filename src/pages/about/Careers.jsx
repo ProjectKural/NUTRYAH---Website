@@ -127,6 +127,7 @@ const CareersPage = () => {
           name="description"
           content="Join Nutryah’s dynamic team of healthcare technology innovators. Explore career opportunities in software development, healthcare IT consulting, data science, product management, and more."
         />
+        <link rel="canonical" href="https://nutryah.com/careers" />
       </Helmet>
 
       {/* Banner */}

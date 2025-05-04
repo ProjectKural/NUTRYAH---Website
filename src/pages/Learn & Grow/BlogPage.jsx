@@ -52,6 +52,7 @@ const BlogPage = () => {
           name="description"
           content="Stay ahead in healthcare IT with Nutryah’s blog. Explore expert articles on digital transformation, NABH compliance, telemedicine, healthcare security, and best practices for hospitals and clinics."
         />
+         <link rel="canonical" href="https://nutryah.com/blog" />
       </Helmet>
 
       {/* Banner Section */}

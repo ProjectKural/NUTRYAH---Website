@@ -193,6 +193,7 @@ const ServicesPage = () => {
           name="description"
           content="Explore Nutryah’s range of healthcare IT services including custom development, integration, analytics, telehealth, and ongoing support."
         />
+         <link rel="canonical" href="https://nutryah.com/services" />
       </Helmet>
 
       {/* HERO */}
