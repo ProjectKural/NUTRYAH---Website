@@ -9,7 +9,7 @@ import TemplateImg from "../../assets/acadamy/NABH.webp";
 import WebinarImg from "../../assets/acadamy/webinar.webp";
 import CourseImg from "../../assets/acadamy/course.webp";
 import NutryahAcademyVisual from "../../assets/acadamy/smart.webp"; // Replace with actual image
-import "../../styles/themes.css"
+
 
 const TABS = ["Templates", "Webinars", "Courses"];
 const tabData = {
@@ -241,8 +241,8 @@ const AcademyPage = () => {
               key={tab}
               onClick={() => handleTabClick(tab)}
               className={`px-4 py-2 text-sm md:text-base font-semibold border-b-2 transition-all ${activeTab === tab
-                  ? "border-[var(--bg-secondary)] text-[var(--bg-secondary)]"
-                  : "border-transparent text-gray-500 hover:text-[var(--bg-secondary)]"
+                ? "border-[var(--bg-secondary)] text-[var(--bg-secondary)]"
+                : "border-transparent text-gray-500 hover:text-[var(--bg-secondary)]"
                 }`}
             >
               {tab}
@@ -287,7 +287,7 @@ const AcademyPage = () => {
 
 
 
-    
+
 
       <section className="max-h-screen bg-[var(--bg-secondary)] text-[var(--bg-text)] px-6 md:px-12 flex flex-col justify-between pt-16 pb-10">
         {/* Top: Heading */}
@@ -295,7 +295,7 @@ const AcademyPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Learn from India’s Healthcare Technology Experts
           </h2>
-          
+
         </div>
 
         {/* Bottom: Left Image + Right List */}
@@ -311,10 +311,10 @@ const AcademyPage = () => {
 
           {/* Right: Checklist */}
           <div className="text-left space-y-4">
-          <p className="text-2xl text-[var(--text-dark)] max-w-3xl font-bold">
-            Nutryah Academy is built by real practitioners helping hospitals digitize.
-            Everything is practical, proven, and designed to deliver real results.
-          </p>
+            <p className="text-2xl text-[var(--text-dark)] max-w-3xl font-bold">
+              Nutryah Academy is built by real practitioners helping hospitals digitize.
+              Everything is practical, proven, and designed to deliver real results.
+            </p>
             <ul className="text-xl text-[var(--text-sub-dark)] space-y-2 font-semibold">
               <li>→ &nbsp; Learn faster</li>
               <li>→ &nbsp; Avoid costly mistakes</li>
