@@ -127,7 +127,6 @@ const CareersPage = () => {
           name="description"
           content="Join Nutryah’s dynamic team of healthcare technology innovators. Explore career opportunities in software development, healthcare IT consulting, data science, product management, and more."
         />
-        <link rel="canonical" href="https://nutryah.com/careers" />
       </Helmet>
 
       {/* Banner */}
@@ -254,24 +253,25 @@ const CareersPage = () => {
       </section> */}
 
       {/* Departments Section */}
-      <section className="py-24 px-6 md:px-16 bg-white text-center overflow-hidden">
+      <section className="py-24 px-6 md:px-16 bg-[var(--md-bg)] text-left overflow-hidden">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[var(--bg-text)] mb-4 animate-fadeInUp">
-            Departments Hiring at <span className="text-[var(--bg-secondary)]">Nutryah</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-[var(--bg-text)] mb-8 animate-fadeInUp">
+            Departments Hiring at <span className="text-[var(--bg-secondary)]">NUTRYAH</span>
           </h2>
-          <p className="text-4xl text-gray-600 mb-12 animate-fadeInUp delay-200">
+          <p className="text-2xl text-[var(--text-sub-dark)] mb-12 animate-fadeInUp delay-200">
             Be part of the healthcare revolution. We're growing fast and hiring across all teams.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-fadeInUp delay-300">
             {departments.map((dept, idx) => (
-              <div key={idx} className="bg-[var(--md-bg)] rounded-lg p-6 shadow hover:scale-105 transition transform duration-300 ease-in-out">
-                <div className="text-[var(--bg-text)] text-xl font-semibold">{dept}</div>
+              <div key={idx} className="bg-[var(--text-dark)]  p-6  hover:scale-105 transition transform duration-300 ease-in-out h-[100px] flex justify-center items-center">
+                <div className="text-[var(--md-bg)] text-6sm font-semibold">
+                  <p>{dept}</p></div>
               </div>
             ))}
           </div>
 
-          <a href="/contact" className="mt-12 inline-block bg-[var(--bg-secondary)] hover:bg-[var(--bg-text)] text-white px-8 py-3 rounded-full font-semibold transition">
+          <a href="/contact" className="mt-12 inline-block bg-[var(--bg-secondary)] hover:bg-[var(--bg-sub-cold)] text-[var(--text-dark)] px-8 py-5  font-semibold transition">
             Send Us Your Resume
           </a>
         </div>
@@ -372,10 +372,10 @@ const CareersPage = () => {
           If you’re passionate about innovation, healthcare, and making an impact, we’d love to meet you.
         </p>
         <div className="flex justify-center flex-wrap gap-6">
-          <a href="/contact" className="bg-[var(--bg-secondary)] px-8 py-3 rounded-full font-semibold text-white">
+          <a href="/contact" className="bg-[var(--bg-secondary)] px-8 py-4  font-semibold text-white">
             View Open Positions
           </a>
-          <a href="/contact" className="bg-white text-[var(--bg-text)] px-8 py-3 rounded-full font-semibold">
+          <a href="/contact" className="bg-white text-[var(--bg-text)] px-8 py-4  font-semibold">
             Submit Your Resume
           </a>
         </div>

@@ -94,7 +94,6 @@ const FAQPage = () => {
           name="description"
           content="Find answers to common questions about Nutryah’s healthcare IT solutions, pricing, NABH readiness support, onboarding process, security, and customer success programs."
         />
-        <link rel="canonical" href="https://nutryah.com/faq" />
       </Helmet>
 
       {/* Banner */}

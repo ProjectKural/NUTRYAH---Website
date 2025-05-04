@@ -32,8 +32,6 @@ import WhatsAppChat from '../src/pages/components/WhatsAppChat';
 import CookieConsent from './CookieConsent';
 import NutryahContactForm from './pages/contact/NutryahContactForm';
 import NutryahAuditForm from './pages/contact/NutryahAudit';
-import GoogleAnalytics from './lib/GoogleAnalytics';
-
 
 
 function App() {
@@ -59,7 +57,6 @@ function App() {
       {!hideNavbarRoutes.includes(location.pathname) && <Navbar />}
       <CookieConsent />
       <WhatsAppChat />
-      <GoogleAnalytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />

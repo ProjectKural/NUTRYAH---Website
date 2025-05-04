@@ -8,7 +8,6 @@ export const LegalPage = () => {
             <Helmet>
                 <title>Nutryah | Privacy Policy & Legal Information</title>
                 <meta name="description" content="Review Nutryah’s legal policies, including our Privacy Policy, Terms of Use, and compliance with healthcare regulations. Your privacy and data security are our priority." />
-                <link rel="canonical" href="https://nutryah.com/legal" />
             </Helmet>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center text-gray-800">Privacy Policy & Legal Information</h1>

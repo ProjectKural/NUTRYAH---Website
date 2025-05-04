@@ -42,7 +42,6 @@ const AboutPage = () => {
       <Helmet>
         <title>About Nutryah | Healthcare Software Solutions Company</title>
         <meta name="description" content=" Learn about Nutryah, a leading healthcare software solutions company. Discover our mission to innovate digital healthcare, our values, and our commitment to improving patient care through technology." />
-        <link rel="canonical" href="https://nutryah.com/about" />
       </Helmet>
 
       {/* Hero Section with Background Image */}

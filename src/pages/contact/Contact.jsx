@@ -108,7 +108,6 @@ const ContactPage = () => {
           name="description"
           content="Have questions or ready to transform your healthcare operations? Contact Nutryah. Reach out via phone, email, or our online form to connect with our team for a consultation or support."
         />
-        <link rel="canonical" href="https://nutryah.com/contact" />
       </Helmet>
 
       {/* Hero Section with Background Image */}

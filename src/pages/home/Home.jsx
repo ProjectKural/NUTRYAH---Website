@@ -26,6 +26,14 @@ const Home = () => {
           content="Nutryah provides innovative, efficient, and scalable digital healthcare solutions for hospitals, clinics, pharmacies, and more. Transform patient care and operational efficiency with our software."
         />
         <link rel="canonical" href="https://nutryah.com/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Nutryah Digital Health Private Limited",
+            "url": "https://nutryah.com",
+          })}
+        </script>
       </Helmet>
       <HeroSection />
       <KeyFeatures />
