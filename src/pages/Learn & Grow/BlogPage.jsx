@@ -1,11 +1,15 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet-async";
 import AcademyHero from "../../assets/blog/blog.jpg"; // Replace with your actual image
 import HMS from "../../assets/blog/HMS.jpg"; // Replace with your actual image
 import Analytics from "../../assets/blog/analytics.jpg"; // Replace with your actual image
 
-import "keen-slider/keen-slider.min.css";
-import { useKeenSlider } from "keen-slider/react";
+import NABH from "../../assets/blog/NABH.jpeg";
+import Lab from "../../assets/blog/Lab.jpeg";
+import ABDM from "../../assets/blog/ABDM.jpeg";
+import It from "../../assets/blog/It.jpeg";
+import HIPAA from "../../assets/blog/HIPAA.jpeg";
+import Telemed from "../../assets/blog/Telemed.jpeg";
 const topics = [
   ["🏥", "Hospital Management Systems", "Best practices and latest innovations in HMS, EHR, OPD, IPD management."],
   ["📲", "Telemedicine & Virtual Care", "Implement, optimize, and scale telehealth services for remote care."],
@@ -20,56 +24,41 @@ const articles = [
     title: "Checklist: What Areas Must Be Digitized for NABH Accreditation?",
     snippet: "Accreditation success begins with digital readiness. Here’s the ultimate checklist hospitals must follow to meet NABH digital requirements.",
     link: "/blog/nabh-digital-readiness",
-    image: Analytics,
+    image: NABH,
   },
   {
     title: "The Future of Telemedicine in Rural Healthcare in India",
     snippet: "Telehealth is reshaping access to healthcare across rural India. Explore how technology bridges the doctor-patient gap sustainably.",
     link: "/blog/telemedicine-rural-india",
-    image: Analytics,
+    image: Telemed,
   },
   {
     title: "How to Secure Patient Data: HIPAA and GDPR Best Practices",
     snippet: "Learn key strategies hospitals and clinics must adopt to ensure data protection, avoid breaches, and stay compliant with global standards.",
     link: "/blog/hipaa-gdpr-security",
-    image: Analytics,
+    image: HIPAA,
   },
   {
     title: "Common Mistakes in Hospital IT Setup (And How to Avoid Them)",
     snippet: "Poor planning can cripple your digital health ambitions. Discover the top mistakes in IT setup — and how Nutryah helps hospitals avoid them.",
     link: "/blog/hospital-it-mistakes",
-    image: Analytics,
+    image: It,
   },
   {
     title: "Understanding the Ayushman Bharat Digital Mission (ABDM)",
     snippet: "India’s ABDM is reshaping healthcare. Here's a simple breakdown of ABHA, HFR, UHI, and how hospitals can prepare.",
     link: "/blog/abdm-health-id",
-    image: Analytics,
+    image: ABDM,
   },
   {
     title: "Building a Future-Ready Diagnostic Lab: LIMS & Beyond",
     snippet: "Discover why modern labs need more than basic systems — and how Nutryah’s LIMS helps them grow smarter.",
     link: "/blog/lims-future-diagnostics",
-    image: Analytics,
+    image: Lab,
   },
 ];
 
 const BlogPage = () => {
-  const [sliderRef, slider] = useKeenSlider({
-    loop: true,
-    breakpoints: {
-      "(min-width: 1024px)": {
-        slides: { perView: 3, spacing: 20 },
-      },
-      "(min-width: 640px)": {
-        slides: { perView: 2, spacing: 16 },
-      },
-    },
-    slides: { perView: 1, spacing: 12 },
-    dragSpeed: 1,
-    created: () => {},
-  });
-  
   return (
     <div className="blog-page">
       <Helmet>
@@ -252,86 +241,88 @@ const BlogPage = () => {
 
 
       {/* Latest Articles */}
-      <section className="py-20 px-4 bg-[var(--md-bg)]">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-10 text-[var(--bg-text)]">
+      <section className="py-16 px-6 md:px-12 bg-[var(--md-bg)] text-center">
+        <h2 className="text-3xl md:text-5xl font-bold text-[var(--bg-text)] mb-12">
           Latest Articles
         </h2>
 
-        <div className="relative max-w-7xl mx-auto">
-          <div ref={sliderRef} className="keen-slider">
-            {articles.map((article, idx) => (
-              <div
-                key={idx}
-                className="keen-slider__slide bg-white rounded-lg overflow-hidden shadow-md flex flex-col w-[250px] sm:w-[280px] md:w-[300px] h-[420px] mx-2"
-              >
-                <img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-4 flex flex-col justify-between h-full">
-                  <h3 className="text-lg font-bold mb-2 text-[var(--bg-text)]">
-                    {article.title}
-                  </h3>
-                  <p className="text-sm text-[var(--bg-text-secondary)] flex-grow">
-                    {article.snippet}
-                  </p>
-                  <a
-                    href={article.link}
-                    className="mt-4 text-[var(--bg-secondary)] font-semibold text-sm"
-                  >
-                    ➔ Read More
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {articles.map((article, idx) => (
+            <div
+              key={idx}
+              className="group  bg-[var(--bg-background-primary)] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 border border-transparent hover:border-[var(--bg-secondary)]"
+            >
+              {/* Article Image */}
+              <img
+                src={article.image}
+                alt={article.title}
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
 
-          {/* Manual Arrows */}
-          <button
-            onClick={() => slider.current?.prev()}
-            className="absolute top-1/2 left-2 -translate-y-1/2 bg-white p-2 rounded-full shadow z-10"
-          >
-            ◀
-          </button>
-          <button
-            onClick={() => slider.current?.next()}
-            className="absolute top-1/2 right-2 -translate-y-1/2 bg-white p-2 rounded-full shadow z-10"
-          >
-            ▶
-          </button>
+              {/* Text Content */}
+              <div className="p-6 text-left flex flex-col h-full">
+                <h3 className="text-xl font-semibold mb-2 text-[var(--bg-text)] group-hover:text-[var(--bg-secondary)] transition-colors duration-300">
+                  {article.title}
+                </h3>
+                <p className="text-[var(--text-dark)] text-sm mb-6 leading-relaxed line-clamp-3">
+                  {article.snippet}
+                </p>
+
+                <a
+                  href={article.link}
+                  className="mt-auto text-[var(--bg-secondary)] font-semibold text-sm inline-block relative group"
+                >
+                  {/* <span className="inline-block transition-transform group-hover:translate-x-1">➔ Read More</span> */}
+                  <span className="block h-[2px] w-0 bg-[var(--bg-secondary)] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
 
-
       {/* Newsletter Subscription CTA */}
-      <section className="py-16 px-6 md:px-12 bg-[var(--bg-background-primary)] text-center">
-        <h2 className="text-3xl md:text-5xl font-bold text-[var(--bg-text)] mb-6">
-          Stay Updated with Healthcare Innovations
-        </h2>
-        <p className="text-lg text-[var(--bg-text-secondary)] max-w-2xl mx-auto mb-8">
-          Don't miss out! Subscribe for expert tips, trends, and updates from the world of healthcare IT.
-        </p>
-        <form className="flex flex-col md:flex-row gap-4 justify-center items-center">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="px-4 py-3 rounded-full w-72 bg-white shadow-md focus:outline-none"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="px-4 py-3 rounded-full w-72 bg-white shadow-md focus:outline-none"
-          />
-          <button
-            type="submit"
-            className="bg-[var(--bg-secondary)] text-white px-8 py-3 rounded-full font-semibold hover:bg-teal-600 transition"
+      <section className="py-20 px-6 md:px-12 bg-[var(--bg-sub-cold)] text-center relative overflow-hidden">
+        {/* Decorative Blurred Background Circles */}
+        <div className="absolute top-[-50px] left-[-100px] w-72 h-72 bg-[var(--bg-secondary)] opacity-20 rounded-full filter blur-3xl z-0" />
+        <div className="absolute bottom-[-50px] right-[-100px] w-72 h-72 bg-[#4da1a9] opacity-20 rounded-full filter blur-3xl z-0" />
+
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-[var(--bg-text)] mb-4">
+            Stay Updated with Healthcare Innovations
+          </h2>
+          <p className="text-lg text-[var(--bg-text-secondary)] mb-10">
+            Don’t miss out! Subscribe for expert tips, trends, and updates from the world of healthcare IT.
+          </p>
+
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            📩 Subscribe
-          </button>
-        </form>
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="px-5 py-3 rounded-lg w-full sm:w-64 bg-white shadow-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[var(--bg-secondary)] transition"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="px-5 py-3 rounded-lg w-full sm:w-64 bg-white shadow-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[var(--bg-secondary)] transition"
+            />
+            <button
+              type="submit"
+              className="px-6 py-3  bg-[var(--bg-secondary)] text-white font-semibold shadow hover:bg-teal-600 transition"
+            >
+              Subscribe
+            </button>
+          </form>
+
+          {/* Optional success message */}
+          {/* <p className="text-green-600 text-sm mt-4">Thanks for subscribing!</p> */}
+        </div>
       </section>
+
 
       {/* Final CTA */}
       <section className="py-20 px-6 md:px-12 bg-[var(--bg-text)] text-center text-white">
@@ -342,11 +333,11 @@ const BlogPage = () => {
           Beyond reading — let's build your hospital or clinic’s digital future together.
         </p>
         <div className="flex justify-center flex-wrap gap-6">
-          <a href="/contact" className="bg-[var(--bg-secondary)] px-8 py-3 rounded-full font-semibold text-white">
-            🚀 Schedule a Free Demo
+          <a href="/contact" className="bg-[var(--bg-secondary)] px-8 py-3  font-semibold text-white">
+            Schedule a Free Demo
           </a>
-          <a href="/services" className="bg-white text-[var(--bg-text)] px-8 py-3 rounded-full font-semibold">
-            📄 Explore Our Services
+          <a href="/services" className="bg-white text-[var(--bg-text)] px-8 py-3  font-semibold">
+            Explore Our Services
           </a>
         </div>
       </section>

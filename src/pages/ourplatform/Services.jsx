@@ -193,6 +193,12 @@ const ServicesPage = () => {
           name="description"
           content="Explore Nutryah’s range of healthcare IT services including custom development, integration, analytics, telehealth, and ongoing support."
         />
+        <link rel="canonical" href="https://nutryah.com/services" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Nutryah | Services – Healthcare IT Solutions" />
+        <meta property="og:description" content="Explore Nutryah’s range of healthcare IT services including custom development, integration, analytics, telehealth, and ongoing support." />
+        <meta property="og:url" content="https://nutryah.com/services" />
+        <meta property="og:type" content="website" />
       </Helmet>
 
       {/* HERO */}
@@ -320,107 +326,105 @@ const ServicesPage = () => {
 
 
       <section className="w-full bg-[var(--md-bg)] py-20 px-4 md:px-12">
-  <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
-    Our Proven Delivery Methodology
-  </h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">
+          Our Proven Delivery Methodology
+        </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
-    {/* Scrollspy Navigation */}
-    <div className="md:col-span-1">
-      {/* Mobile Sticky Horizontal Nav */}
-      <div className="md:hidden sticky top-16 z-10 bg-[var(--md-bg)] overflow-x-auto flex gap-3 border-b pb-3 pt-2 mb-6">
-        {steps.map((step, idx) => (
-          <ScrollLink
-            key={step.id}
-            to={step.id}
-            smooth={true}
-            duration={500}
-            offset={-100}
-            spy={true}
-            onSetActive={() => setActiveStep(step.id)}
-            className={`whitespace-nowrap px-4 py-2 rounded-full border-2 text-sm font-medium cursor-pointer transition-all ${
-              activeStep === step.id
-                ? "border-blue-600 text-blue-600 bg-white"
-                : "border-gray-200 text-gray-600"
-            }`}
-          >
-            0{idx + 1} {step.title}
-          </ScrollLink>
-        ))}
-      </div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          {/* Scrollspy Navigation */}
+          <div className="md:col-span-1">
+            {/* Mobile Sticky Horizontal Nav */}
+            <div className="md:hidden sticky top-16 z-10 bg-[var(--md-bg)] overflow-x-auto flex gap-3 border-b pb-3 pt-2 mb-6">
+              {steps.map((step, idx) => (
+                <ScrollLink
+                  key={step.id}
+                  to={step.id}
+                  smooth={true}
+                  duration={500}
+                  offset={-100}
+                  spy={true}
+                  onSetActive={() => setActiveStep(step.id)}
+                  className={`whitespace-nowrap px-4 py-2 rounded-full border-2 text-sm font-medium cursor-pointer transition-all ${activeStep === step.id
+                      ? "border-blue-600 text-blue-600 bg-white"
+                      : "border-gray-200 text-gray-600"
+                    }`}
+                >
+                  0{idx + 1} {step.title}
+                </ScrollLink>
+              ))}
+            </div>
 
-      {/* Desktop Sticky Vertical Nav */}
-      <div className="hidden md:block sticky top-32 space-y-4">
-        <p className="text-xs font-bold tracking-widest text-gray-600 uppercase">
-          Our Solutions
-        </p>
-        {steps.map((step, idx) => (
-          <ScrollLink
-            key={step.id}
-            to={step.id}
-            smooth={true}
-            duration={500}
-            offset={-100}
-            spy={true}
-            onSetActive={() => setActiveStep(step.id)}
-            className={`block border-l-4 pl-4 py-2 cursor-pointer transition-all ${
-              activeStep === step.id
-                ? "border-blue-600 text-blue-600 font-semibold"
-                : "border-transparent text-gray-700 hover:text-blue-500"
-            }`}
-          >
-            <span className="text-sm font-semibold">0{idx + 1}</span>
-            <div className="text-base">{step.title}</div>
-          </ScrollLink>
-        ))}
-      </div>
-    </div>
-
-    {/* Content Panels */}
-    <div className="md:col-span-3 space-y-20">
-      {steps.map((step) => (
-        <Element key={step.id} name={step.id} id={step.id}>
-          <div className="p-6 md:p-10 rounded-xl shadow-sm bg-white md:flex md:items-center gap-10 h-auto relative overflow-hidden">
-            {/* Text */}
-            <div className="md:w-2/3 z-10">
-              <p className="text-xs uppercase text-gray-500 font-semibold mb-2">
+            {/* Desktop Sticky Vertical Nav */}
+            <div className="hidden md:block sticky top-32 space-y-4">
+              <p className="text-xs font-bold tracking-widest text-gray-600 uppercase">
                 Our Solutions
               </p>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-                {step.title}
-              </h3>
-              <p className="text-base sm:text-lg text-gray-600 mb-5">
-                {step.description}
-              </p>
-              <a
-                href="/contact"
-                className="text-blue-600 font-semibold hover:underline"
-              >
-                Learn more →
-              </a>
-            </div>
-
-            {/* Image with Background Shape (Always Visible) */}
-            <div className="relative w-full md:w-1/3 mt-6 md:mt-0">
-              <div
-                className="absolute inset-0 -z-10 rounded-xl"
-                style={{
-                  backgroundColor: "#3B82F6",
-                  clipPath: "polygon(10% 0%, 100% 10%, 90% 100%, 0% 90%)",
-                }}
-              ></div>
-              <img
-                src={step.image}
-                alt={step.title}
-                className="w-full rounded-lg shadow-md relative z-10"
-              />
+              {steps.map((step, idx) => (
+                <ScrollLink
+                  key={step.id}
+                  to={step.id}
+                  smooth={true}
+                  duration={500}
+                  offset={-100}
+                  spy={true}
+                  onSetActive={() => setActiveStep(step.id)}
+                  className={`block border-l-4 pl-4 py-2 cursor-pointer transition-all ${activeStep === step.id
+                      ? "border-blue-600 text-blue-600 font-semibold"
+                      : "border-transparent text-gray-700 hover:text-blue-500"
+                    }`}
+                >
+                  <span className="text-sm font-semibold">0{idx + 1}</span>
+                  <div className="text-base">{step.title}</div>
+                </ScrollLink>
+              ))}
             </div>
           </div>
-        </Element>
-      ))}
-    </div>
-  </div>
-</section>
+
+          {/* Content Panels */}
+          <div className="md:col-span-3 space-y-20">
+            {steps.map((step) => (
+              <Element key={step.id} name={step.id} id={step.id}>
+                <div className="p-6 md:p-10 rounded-xl shadow-sm bg-white md:flex md:items-center gap-10 h-auto relative overflow-hidden">
+                  {/* Text */}
+                  <div className="md:w-2/3 z-10">
+                    <p className="text-xs uppercase text-gray-500 font-semibold mb-2">
+                      Our Solutions
+                    </p>
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+                      {step.title}
+                    </h3>
+                    <p className="text-base sm:text-lg text-gray-600 mb-5">
+                      {step.description}
+                    </p>
+                    <a
+                      href="/contact"
+                      className="text-blue-600 font-semibold hover:underline"
+                    >
+                      Learn more →
+                    </a>
+                  </div>
+
+                  {/* Image with Background Shape (Always Visible) */}
+                  <div className="relative w-full md:w-1/3 mt-6 md:mt-0">
+                    <div
+                      className="absolute inset-0 -z-10 rounded-xl"
+                      style={{
+                        backgroundColor: "#3B82F6",
+                        clipPath: "polygon(10% 0%, 100% 10%, 90% 100%, 0% 90%)",
+                      }}
+                    ></div>
+                    <img
+                      src={step.image}
+                      alt={step.title}
+                      className="w-full rounded-lg shadow-md relative z-10"
+                    />
+                  </div>
+                </div>
+              </Element>
+            ))}
+          </div>
+        </div>
+      </section>
 
 
 
@@ -444,7 +448,7 @@ const ServicesPage = () => {
             href="/downloads/service-brochure.pdf"
             className="bg-[var(--md-bg)] text-[var(--bg-text)] px-8 py-4 rounded-full font-semibold hover:opacity-90 transition"
           >
-             Download Service Brochure
+            Download Service Brochure
           </a>
         </div>
       </section>
