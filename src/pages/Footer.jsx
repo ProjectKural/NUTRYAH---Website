@@ -20,7 +20,7 @@ import {
   MapPin,
 } from "lucide-react";
 import axios from "axios";
-
+import logo from "../assets/logo/logo_bass.svg"
 const Footer = () => {
 
   const link = {
@@ -70,7 +70,7 @@ const Footer = () => {
 
         {/* Column 1: Brand */}
         <div className="md:col-span-1">
-          <h2 className="text-2xl font-bold mb-4">Nutryah</h2>
+          <h2 className="text-2xl font-bold mb-4"><img src={logo} alt="" className='h-[5rem] w-auto object-contain'/></h2>
           <p className="text-sm text-gray-300">
             Empowering hospitals, clinics, labs, and wellness centers with smart, scalable healthcare IT solutions — built for NABH and ABDM readiness.
           </p>

@@ -58,7 +58,7 @@
   
   .dropdown-menu {
     display: none;
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     width: 100%;

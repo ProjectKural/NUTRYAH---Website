@@ -3,6 +3,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import "../styles/Themes.css";
 import "../styles/Navbar.css";
+import logo from "../../src/assets/logo/logo_bass.svg"
 
 const navItems = [
   {
@@ -83,14 +84,14 @@ export default function Navbar() {
       onMouseLeave={() => setHovering(false)}
       className={`${scrolled ? "fixed" : "absolute"} top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled || hovering
-          ? "bg-[#000] shadow-md backdrop-blur-md"
+          ? "bg-[#03468A] shadow-md backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-12xl mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           <div className="text-3xl font-extrabold tracking-wide text-white">
-            <a href="/">NUTRYAH</a>
+            <a href="/"><img src={logo} alt="" className='h-[5rem] w-auto object-contain'/></a>
           </div>
 
           <nav className="hidden md:flex items-center gap-10 text-lg font-semibold">
@@ -131,7 +132,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="absolute w-full bg-[#000] border-t border-white py-8 px-10 flex md:flex-row hidden md:flex z-40"
+            className="absolute w-full bg-[#03468A] border-t border-white py-8 px-10 flex md:flex-row hidden md:flex z-40"
           >
             <div className="w-1/4 pr-8 border-r border-gray-700">
               {navItems.find(item => item.label === activeMenu)?.sections.map((section, idx) => (

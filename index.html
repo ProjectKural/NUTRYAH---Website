@@ -1,58 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nutryah</title>
 
-    <!-- ✅ Consent Mode Setup (v2) -->
-    <script>
-      // Define dataLayer and the gtag function
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link
+  rel="icon"
+  href="/favicon.png"
+  type="image/png"
+  sizes="256x256"
+/>
+
+  <title>Nutryah</title>
+
+  <!-- ✅ Consent Mode Setup (v2) -->
+  <script>
+    // Define dataLayer and the gtag function
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    // ✅ Set default consent for all users (can be updated later by CMP)
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied'
+      // For region-specific config:
+      // 'regions': ['EEA', 'IN', 'US'] 
+    });
+  </script>
+
+  <!-- ✅ Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YTWXBFN1N"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-2YTWXBFN1N', {
+      cookie_domain: 'auto',
+      linker: {
+        domains: [
+          'nutryah.com',
+          '6816e3bcafaee000863f187--benevolent-dusk-80826b.netlify.app'
+        ]
       }
+    });
+  </script>
 
-      // ✅ Set default consent for all users (can be updated later by CMP)
-      gtag('consent', 'default', {
-        ad_storage: 'denied',
-        ad_user_data: 'denied',
-        ad_personalization: 'denied',
-        analytics_storage: 'denied'
-        // For region-specific config:
-        // 'regions': ['EEA', 'IN', 'US'] 
-      });
-    </script>
+  <!-- ✅ CookieYes CMP Banner -->
 
-    <!-- ✅ Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YTWXBFN1N"></script>
-    <script>
-      gtag('js', new Date());
-      gtag('config', 'G-2YTWXBFN1N', {
-        cookie_domain: 'auto',
-        linker: {
-          domains: [
-            'nutryah.com',
-            '6816e3bcafaee000863f187--benevolent-dusk-80826b.netlify.app'
-          ]
-        }
-      });
-    </script>
 
-    <!-- ✅ CookieYes CMP Banner -->
-    
+  <!-- ✅ Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
 
-    <!-- ✅ Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<body>
+  <div id="root"></div>
 
-  <body>
-    <div id="root"></div>
+  <!-- Vite React App -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 
-    <!-- Vite React App -->
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
 </html>
